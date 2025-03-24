@@ -1,4 +1,4 @@
-variable "vpc1_cidr_block_block" {
+variable "vpc1_cidr_block" {
   type        = string
   description = "CIDR block for VPC 1"
 }
@@ -23,7 +23,7 @@ variable "vpc1_private_subnets" {
   description = "Private subnets for VPC 1"
 }
 
-variable "vpc2_cidr_block_block" {
+variable "vpc2_cidr_block" {
   type        = string
   description = "CIDR block for VPC 2"
 }
@@ -58,9 +58,9 @@ variable "azs" {
   description = "Availability zones for subnets"
 }
 
-# variable "use_private_subnet" {
-#   type = bool
-#   description = "Whether to use private subnets or not"
-# }
+variable "use_private_subnet" {
+  type = bool
+  description = "Whether to use private subnets or not"
+}
 
 

@@ -37,6 +37,7 @@ module "ec2_1" {
   # private_subnet = module.vpc1.private_subnet_id
   # public_subnet = module.vpc1.public_subnet_id
   subnet_id = var.use_private_subnet ? module.vpc1.private_subnet_id : module.vpc1.public_subnet_id
+
   use_private_subnet = true
   vpc = module.vpc1.vpc_id
 }
@@ -49,8 +50,8 @@ module "ec2_2" {
   key_name = var.key_name
   # private_subnet = module.vpc2.private_subnet_id
   # public_subnet = module.vpc2.public_subnet_id
-  subnet_id = var.use_private_subnet ? module.vpc2.private_subnet_id : module.vpc2.public_subnet_id 
-  # use_private_subnet = true
+  subnet_id = var.use_private_subnet ? module.vpc2.private_subnet_id : module.vpc2.public_subnet_id
+  use_private_subnet = true
   vpc = module.vpc2.vpc_id
 }
 

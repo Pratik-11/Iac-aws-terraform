@@ -10,18 +10,6 @@ variable "ami" {
   description = "UBuntu AMI"
 }
 
-variable "public_subnet" {
-  type = string
-  # default = "subnet-0ae9262c010bcb267"
-  description = "public subnet 1 in vpc"
-}
-
-variable "private_subnet" {
-  type = string
-  # default = "subnet-0ae9262c010bcb267"
-  description = "private subnet 1 in vpc"
-}
-
 variable "vpc" {
   type = string
   # default = "vpc-0d8c98b8c9f0d6a4a"

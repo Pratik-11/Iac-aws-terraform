@@ -1,7 +1,7 @@
 resource "aws_vpc_peering_connection" "peer" {
   vpc_id      = var.vpc1_id
   peer_vpc_id = var.vpc2_id
-#   auto_accept = true  
+  auto_accept = true  
   tags = {
     Name = "vpc1-to-vpc2-peering"
   }
